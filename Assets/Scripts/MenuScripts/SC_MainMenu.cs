@@ -5,7 +5,7 @@ using UnityEngine;
 public class SC_MainMenu : MonoBehaviour
 {
     public GameObject MainMenu;
-    public GameObject CreditsMenu;
+    public GameObject SettingsMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,8 @@ public class SC_MainMenu : MonoBehaviour
     {
         // Play Now Button has been pressed, here you can initialize your game (For example Load a Scene called GameLevel etc.)
         // TODO: Change Scene!
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameLevel");
+        //UnityEngine.SceneManagement.SceneManager.LoadScene("GameLevel");
+        Debug.Log("Play pressed");
     }
 
     public void SettingsButton()
@@ -31,7 +32,7 @@ public class SC_MainMenu : MonoBehaviour
     {
         // Show Main Menu
         MainMenu.SetActive(true);
-        CreditsMenu.SetActive(false);
+        SettingsMenu.SetActive(false);
     }
 
     public void QuitButton()
