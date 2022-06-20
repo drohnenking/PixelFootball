@@ -270,7 +270,6 @@ GameObject:
   - component: {fileID: 168890037}
   - component: {fileID: 168890036}
   - component: {fileID: 168890035}
-  - component: {fileID: 168890040}
   - component: {fileID: 168890039}
   m_Layer: 5
   m_Name: Canvas
@@ -375,18 +374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e78df2c4ea841d4da36dfe53538986c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &168890040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168890034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b0e5a922c4ba8945a0142ba447dd7c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  MainMenu: {fileID: 1538112303}
+  SettingsMenu: {fileID: 1733916652}
 --- !u!1 &181117962
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +549,7 @@ GameObject:
   - component: {fileID: 330493741}
   - component: {fileID: 330493740}
   - component: {fileID: 330493742}
+  - component: {fileID: 330493743}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -585,7 +575,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1532, y: Infinity}
+  m_SizeDelta: {x: 1101, y: 619.31244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &330493740
 MonoBehaviour:
@@ -635,6 +625,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b0e5a922c4ba8945a0142ba447dd7c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &330493743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330493738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4241d3dd373380249b67bd6271d3d5d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &391965358
@@ -720,7 +722,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 391965361}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 168890039}
+        m_TargetAssemblyTypeName: SC_MainMenu, Assembly-CSharp
+        m_MethodName: SettingsButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &391965361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,7 +856,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 486382253}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 168890039}
+        m_TargetAssemblyTypeName: SC_MainMenu, Assembly-CSharp
+        m_MethodName: MainMenuButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &486382253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -918,7 +944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000012159, y: 101}
+  m_AnchoredPosition: {x: 0, y: 101}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &547908201
@@ -964,7 +990,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 547908202}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 168890039}
+        m_TargetAssemblyTypeName: SC_MainMenu, Assembly-CSharp
+        m_MethodName: PlayNowButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &547908202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1580,7 +1618,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0025024, y: 0.00048828}
+  m_AnchoredPosition: {x: 0, y: 0.00048828}
   m_SizeDelta: {x: 1101, y: 514}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1686716903
@@ -1702,7 +1740,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0025024, y: 0.00048828}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1101, y: 514}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1846916657
@@ -1925,7 +1963,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2020706601}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 168890039}
+        m_TargetAssemblyTypeName: SC_MainMenu, Assembly-CSharp
+        m_MethodName: QuitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2020706601
 MonoBehaviour:
   m_ObjectHideFlags: 0
